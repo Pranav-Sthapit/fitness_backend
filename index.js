@@ -25,12 +25,6 @@ app.use("/",nutritionRoute);
 app.use("/",activityRoute);
 app.use("/",signingRoute);
 
-pool.connect()
-  .then(() => {console.log("PostgreSQL connected");
-  })
-  .catch(err => console.error("DB connection error", err));
-
-
 app.listen(PORT,()=>{
     console.log(`Server running on http://localhost:${PORT}`);
 });

@@ -9,6 +9,4 @@ export const pool=new Pool({
     database:process.env.DB_NAME,
     password:process.env.DB_PASSWORD_CLOUD,
     port:Number(process.env.DB_PORT),
-    family:4
 });
-
