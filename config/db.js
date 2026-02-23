@@ -5,9 +5,9 @@ dotenv.config();
 
 export const pool=new Pool({
     user:process.env.DB_USER,
-    host:process.env.DB_HOST,
+    host:process.env.DB_HOST_CLOUD,
     database:process.env.DB_NAME,
-    password:process.env.DB_PASSWORD,
+    password:process.env.DB_PASSWORD_CLOUD,
     port:Number(process.env.DB_PORT),
 });
 
